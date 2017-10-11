@@ -10,8 +10,18 @@ public final class CompteFactory
 		return new CompteCourant(owner);
 	}
 
+	public CompteManip createCompteCourant(String owner, float ceiling)
+	{
+		return new CompteCourant(owner, ceiling);
+	}
+
 	public CompteManip createCompteEpargne(String owner, float interestRates)
 	{
 		return new CompteEpargne(owner, interestRates);
+	}
+
+	public CompteManip createCompteEpargne(String owner, float interestRates, float ceiling)
+	{
+		return new CompteEpargne(owner, interestRates, ceiling);
 	}
 }

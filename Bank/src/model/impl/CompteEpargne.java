@@ -41,7 +41,7 @@ public final class CompteEpargne extends Compte implements CompteManip
 
     public double withdraw(double amount)
     {
-        if (this.getBalance()<= 50)
+        if (this.getBalance()-amount< 50)
         {
             System.out.println ("Erreur : Retrait impossible, solde insuffisant !");
         }
