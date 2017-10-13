@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-10-13T15:46:48.362791Z</date>
+  <millis>1507909608362</millis>
+  <nanos>791000</nanos>
+  <sequence>1</sequence>
+  <logger>main.Main</logger>
+  <level>SEVERE</level>
+  <class>main.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Overdraft. Current balance = 100.0 Current ceiling = 50.0</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-10-13T15:56:35.120876Z</date>
+  <millis>1507910195120</millis>
+  <nanos>876000</nanos>
+  <sequence>0</sequence>
+  <logger>main.Main</logger>
+  <level>SEVERE</level>
+  <class>main.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+</record>
+</log>

@@ -1,4 +1,4 @@
-package model.impl;
+package model.exceptions;
 
 public class InterestRatesException extends Exception
 {

@@ -1,6 +1,7 @@
 package model.impl;
 
 import model.dec.CompteManip;
+import model.exceptions.*;
 
 public final class CompteEpargne extends Compte implements CompteManip
 {

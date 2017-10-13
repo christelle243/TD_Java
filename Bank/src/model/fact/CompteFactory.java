@@ -2,6 +2,7 @@ package model.fact;
 
 import model.dec.CompteManip;
 import model.impl.*;
+import model.exceptions.*;
 
 public final class CompteFactory
 {
