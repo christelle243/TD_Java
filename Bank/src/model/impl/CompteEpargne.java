@@ -6,32 +6,26 @@ public final class CompteEpargne extends Compte implements CompteManip
 {
 	private final float interestRates;
 
-	public CompteEpargne (String owner, double initalBalance, float interestRates)
+	public CompteEpargne (String owner, double initalBalance, float interestRates) throws InterestRatesException
     {
         super(owner, initalBalance);
-        if (interestRates > 0)
+        if (interestRates <= 0)
         {
-        	 this.interestRates = interestRates;
+            InterestRatesException e = new InterestRatesException (interestRates);   
+            throw e;
         }
-        else
-        {
-        	System.out.println ("Erreur : Taux d'interêt nul ou négatif (interet par defaut : 1% ) !");
-            this.interestRates = 1;
-        }
+            this.interestRates = interestRates;
     }
 
-    public CompteEpargne (String owner, float interestRates)
+    public CompteEpargne (String owner, float interestRates) throws InterestRatesException
     {
     	super(owner);
-    	if (interestRates > 0)
+    	if (interestRates <= 0)
         {
-        	 this.interestRates = interestRates;
+            InterestRatesException e = new InterestRatesException (interestRates);   
+            throw e;
         }
-        else
-        {
-        	System.out.println ("Erreur : Taux d'interêt nul ou négatif  (interet par defaut : 1% ) !");
-            this.interestRates = 1;
-        }
+            this.interestRates = interestRates;
     }
 
     public float getInterestRates ()

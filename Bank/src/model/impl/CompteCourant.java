@@ -11,6 +11,7 @@ import model.dec.CompteManip;
 public final class CompteCourant extends Compte implements CompteManip
 {
     private float ceiling;
+    
     public CompteCourant (String owner, double initalBalance)
     {
         super(owner, initalBalance);
