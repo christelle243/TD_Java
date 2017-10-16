@@ -1,3 +1,5 @@
 TD CPOO L3-MIAGE PARIS 10 (2017/2018)
 
-Problème avec l’exception des taux intérêts (à vérifier) !!
+Problème avec l’exception des taux intérêts !!
+Exception sur constructeur, problème sur la création de l'objet. Quand on le crée dans le try, il n'est logiquement plus visible à l'exterieur. Mais on ne peut pas le créer en dehors car il Throws Exception...
+
