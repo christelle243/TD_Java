@@ -5,6 +5,9 @@ TD Bank :
 Problème avec l’exception des taux intérêts !!
 Exception sur constructeur, problème sur la création de l'objet. Quand on le crée dans le try, il n'est logiquement plus visible à l'extérieur. Mais on ne peut pas le créer en dehors car il Throws Exception...
 
+TD Cinema :
 
+Première partie du TD fonctionne. (Test effectué)
+Faire la suite !
 
 Compilation : javac main/Main.java -d ../bin
