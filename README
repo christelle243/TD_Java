@@ -3,11 +3,8 @@ TD CPOO L3-MIAGE PARIS 10 (2017/2018)
 TD Bank : 
 
 Problème avec l’exception des taux intérêts !!
-Exception sur constructeur, problème sur la création de l'objet. Quand on le crée dans le try, il n'est logiquement plus visible à l'extérieur. Mais on ne peut pas le créer en dehors car il Throws Exception...
+Faire une Throws Exception dans une CompteManip (faire le test)
 
-TD Cinema :
-
-Première partie du TD fonctionne. (Test effectué)
-Faire la suite !
+Finir le TD1 !
 
 Compilation : javac main/Main.java -d ../bin

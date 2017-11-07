@@ -11,7 +11,7 @@ public final class Main
     	sc.vendrePlaces();
     	sc.vendrePlaces();
     	sc.vendrePlaces();
-    	System.out.println("Nb places vendues : "+ sc.getNbPlacesVendues());
+    	System.out.println("Nb places vendues : "+ sc.getNbPlacesVendues() );
     	System.out.println("La salle est pleine : "+ sc.estPleine());
     	System.out.println("Nombres de place dispo : "+ sc.nbPlacesDisponibles());
     	System.out.println("\n");
