@@ -7,25 +7,15 @@ public final class CompteEpargne extends Compte implements CompteManip
 {
 	private final float interestRates;
 
-	public CompteEpargne (String owner, double initalBalance, float interestRates) throws InterestRatesException
+	public CompteEpargne (String owner, double initalBalance, float interestRates)
     {
         super(owner, initalBalance);
-        if (interestRates <= 0)
-        {
-            InterestRatesException e = new InterestRatesException (interestRates);   
-            throw e;
-        }
             this.interestRates = interestRates;
     }
 
-    public CompteEpargne (String owner, float interestRates) throws InterestRatesException
+    public CompteEpargne (String owner, float interestRates)
     {
     	super(owner);
-    	if (interestRates <= 0)
-        {
-            InterestRatesException e = new InterestRatesException (interestRates);   
-            throw e;
-        }
             this.interestRates = interestRates;
     }
 

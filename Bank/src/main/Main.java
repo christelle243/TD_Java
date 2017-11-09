@@ -15,8 +15,7 @@ public final class Main
 
     private static final Logger LOG = Logger.getLogger(Main.class.getCanonicalName());
 
-    public static void main (String[] args)
-    {
+    public static void main (String[] args) throws InterestRatesException {
         try {
             Handler handler = new FileHandler("bank.log", true);
             handler.setLevel(Level.FINE);
