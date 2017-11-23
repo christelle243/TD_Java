@@ -3,11 +3,14 @@ package model.dec;
 import model.exceptions.InsufficientBalanceException;
 import model.fact.CompteFactory;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import java.util.function.DoublePredicate;
+import java.util.stream.DoubleStream;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CompteManipTest {
 
@@ -35,7 +38,29 @@ class CompteManipTest {
     void withdrawShouldPassWhith500Bal() throws InsufficientBalanceException {
         double oldBal = cm.getBalance();
         double amount = 500.0d;
-        double newBal = cm.withdraw(500.0d);
+        double newBal = cm.withdraw(amount);
         assertEquals(newBal, oldBal - amount );
+    }
+
+    @ParameterizedTest
+    @MethodSource("range500To1000")
+    void withdrawWhithParamShouldPass (double amount) throws InsufficientBalanceException {
+        double oldBal = cm.getBalance();
+        double newBal = cm.withdraw(amount);
+        assertEquals(newBal, oldBal - amount);
+    }
+
+    static DoubleStream range500To1000 (){
+        return DoubleStream.iterate(500.0d, n -> n + 100.0d).limit(6);
+    }
+
+    @ParameterizedTest
+    @MethodSource("rangeForOverdraft")
+    void withdrawWhithParamExpectOverdraft (double amount)  {
+        assertThrows(InsufficientBalanceException.class, () -> cm.withdraw(amount));
+    }
+
+    static DoubleStream rangeForOverdraft (){
+        return DoubleStream.iterate(1100.0d, n -> n + 100.0d).limit(3);
     }
 }

@@ -8,7 +8,7 @@ import model.dec.CompteManip;
 import model.exceptions.*;
 
 /**
- * Modelsa check account.
+ * Models check account.
  */
 public final class CompteCourant extends Compte implements CompteManip
 {

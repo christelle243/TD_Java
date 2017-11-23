@@ -20,5 +20,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter-params:5.0.1" level="project" />
+    <orderEntry type="library" name="org.evosuite.plugins:build-support-test:1.0.5" level="project" />
+    <orderEntry type="library" name="org.evosuite:evosuite-runtime:1.0.5" level="project" />
   </component>
 </module>
