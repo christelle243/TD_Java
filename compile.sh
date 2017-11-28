@@ -1,6 +1,7 @@
 #! /bin/bash
 
-cd Bank/src
+cd Bank/src/
 rm -rf bin
-mkdir -p bin 
+mkdir -p bin
+cd src/
 javac main/Main.java -d ../bin
