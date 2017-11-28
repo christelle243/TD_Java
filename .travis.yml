@@ -2,7 +2,8 @@ language: java
 
 jdk: oraclejdk9
 
-sudo: true
+before_install:
+  - chmod 755 build.sh
 
 script: 
   - "./compile.sh"
