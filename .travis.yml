@@ -2,6 +2,8 @@ language: java
 
 jdk: oraclejdk9
 
+sudo: true
+
 script: 
   - "./compile.sh"
 
