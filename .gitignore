@@ -1,1 +1,6 @@
-bin
+# Ignore build executables
+bin/
+*.class
+
+# Ignore librairies
+lib/
